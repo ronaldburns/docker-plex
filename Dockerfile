@@ -29,6 +29,7 @@ RUN \
 	udev \
 	unrar \
 	wget && \
+	cifs-utils && \
  echo "**** install plex ****" && \
  if [ -z ${PLEX_RELEASE+x} ]; then \
  	PLEX_RELEASE=$(curl -sX GET 'https://plex.tv/api/downloads/5.json' \
